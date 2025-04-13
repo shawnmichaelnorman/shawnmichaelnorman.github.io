@@ -19,7 +19,7 @@ description: "The purpose of this blog is to document my projects and exploratio
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-#theme: "hacker"
+theme: "minima"
 
 rss: rss
 
@@ -41,4 +41,5 @@ defaults:
       path: ""
       type: posts
     values:
-      tags: Other
+      tags: 
+        - Other
