@@ -70,12 +70,7 @@ titles_from_headings:
   
 # Collections  
 #collections:
-  #personal: # collection for personal blog posts
-    #output: true
-# Collections
-collections:
-  posts:
-    title: Posts
+  personal: # collection for personal blog posts
     output: true
     #description: "My thoughts and ideas"
     #feature_text: |
