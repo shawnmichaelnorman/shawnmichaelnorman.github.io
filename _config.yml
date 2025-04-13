@@ -14,7 +14,7 @@ description: "The purpose of this blog is to document my projects and exploratio
 #pinterest_username: username
 #youtube_username: username
 #googleplus_username: +username
-show_downloads: "true"
+#show_downloads: "true"
 #google_analytics: [Your Google Analytics tracking ID]
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
@@ -39,6 +39,6 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
       tags: Other
