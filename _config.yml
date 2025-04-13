@@ -19,7 +19,7 @@ show_downloads: "true"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-theme: "hacker"
+#theme: "hacker"
 
 rss: rss
 
