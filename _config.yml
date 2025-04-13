@@ -68,14 +68,16 @@ titles_from_headings:
   strip_title: true
   collections: true
   
-# Collections  
-#collections:
-  personal: # collection for personal blog posts
+# Collections
+collections:
+  posts:
+    title: Posts
     output: true
-    #description: "My thoughts and ideas"
-    #feature_text: |
+    description: "My thoughts and ideas"
+    feature_text: |
       Welcome to my blog
     #feature_image: "https://picsum.photos/2560/600?image=866"
+
 
 # Collections settings
 defaults:
