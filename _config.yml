@@ -1,10 +1,33 @@
-theme: "minima"
+# Set Theme
+remote_theme: daviddarnes/alembic@main
+#theme: "minima"
+
+# File excludes
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+
+# Set plugins
+plugins:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-feed
+- jekyll-commonmark
+- jekyll-include-cache
+- jemoji
+- jekyll-remote-theme
+
+# Site Settings
 title: "My Blog"
 author: "Shawn Norman"
 description: "The purpose of this blog is to document my projects and exploration with homelab." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 timezone: Etc/UTC # GitHub uses UTC. This is to force dev environment to match
-
-
+permalink: pretty
+#logo: "https://"
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
 #email: "example@mail.com"
@@ -19,34 +42,47 @@ timezone: Etc/UTC # GitHub uses UTC. This is to force dev environment to match
 #googleplus_username: +username
 #show_downloads: "true"
 #google_analytics: [Your Google Analytics tracking ID]
-#########################################################################################
-######### Nothing below needs to be changed (unless you know what you're doing) #########
-#########################################################################################
+#rss: rss
 
+#kramdown:
+  #syntax_highlighter_opts:
+    #disable: true
+comments_repo: shawnmichaelnorman/shawnmichaelnorman.github.io
 
+# Pagination
+paginate: 5
+paginate_path: blog/page:num
+
+# Header nav
+navigation_header:
+- title: Home
+  url: /
+- title: About
+  url: /about/
+- title: Blog
+  url: /blog/
+  
 header_pages:
 #  - resume.html - this must be a file in the root of shawnmichaelnorman.github.io
 titles_from_headings:
   strip_title: true
   collections: true
   
+# Collections  
+#collections:
+  #personal: # collection for personal blog posts
+    #output: true
+# Collections
 collections:
-  personal: # collection for personal blog posts
+  posts:
+    title: Posts
     output: true
+    #description: "My thoughts and ideas"
+    #feature_text: |
+      Welcome to my blog
+    #feature_image: "https://picsum.photos/2560/600?image=866"
 
-rss: rss
-
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
-#remote_theme: pages-themes/hacker@v0.2.0    
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  #- jekyll-remote-theme
-
-comments_repo: shawnmichaelnorman/shawnmichaelnorman.github.io
-
+# Collections settings
 defaults:
   - scope:
       path: ""
