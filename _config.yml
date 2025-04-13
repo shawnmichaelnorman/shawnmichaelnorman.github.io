@@ -1,7 +1,7 @@
 theme: "alembic"
-title: "Starting a blog..."
+title: "My Blog"
 author: "Shawn Norman"
-description: "The purpose of this blog is to document my projects and exploration." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: "The purpose of this blog is to document my projects and exploration with homelab." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 timezone: Etc/UTC # GitHub uses UTC. This is to force dev environment to match
 
 
