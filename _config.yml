@@ -14,7 +14,8 @@ description: "Greetings fellow travelers. This is a tale of exploration and expe
 #pinterest_username: username
 #youtube_username: username
 #googleplus_username: +username
-
+show_downloads: "true"
+#google_analytics: [Your Google Analytics tracking ID]
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
@@ -25,10 +26,11 @@ rss: rss
 kramdown:
   syntax_highlighter_opts:
     disable: true
-    
+remote_theme: pages-themes/hacker@v0.2.0    
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-remote-theme
 
 titles_from_headings:
   strip_title: true
