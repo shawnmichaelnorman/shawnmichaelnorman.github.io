@@ -1,6 +1,8 @@
 title: "Starting a blog..."
 author: "Shawn Norman"
 description: "The purpose of this blog is to document my projects and exploration." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+timezone: Etc/UTC # GitHub uses UTC. This is to force dev environment to match
+
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
@@ -21,6 +23,16 @@ description: "The purpose of this blog is to document my projects and exploratio
 #########################################################################################
 theme: "minima"
 
+header_pages:
+#  - resume.html - this must be a file in the root of shawnmichaelnorman.github.io
+titles_from_headings:
+  strip_title: true
+  collections: true
+  
+collections:
+  personal: # collection for personal blog posts
+    output: true
+
 rss: rss
 
 kramdown:
@@ -32,9 +44,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-remote-theme
 
-titles_from_headings:
-  strip_title: true
-  collections: true
+comments_repo: shawnmichaelnorman/shawnmichaelnorman.github.io
 
 defaults:
   - scope:
